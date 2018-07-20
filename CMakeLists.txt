@@ -28,6 +28,11 @@ find_package(Qt5 COMPONENTS Core Widgets Xml REQUIRED)
 #
 #
 
+SET(ABSOLUTE_DATA_DIR ${CMAKE_CURRENT_SOURCE_DIR}/share)
+SET(VERSION "0.1.0")
+configure_file(QodeEditConfig.h.in gen/QodeEditConfig.h)
+include_directories(${PROJECT_BINARY_DIR}/gen)
+
 include_directories(src)
 
 SET(HEADERS 
@@ -69,6 +74,8 @@ SET(HEADERS
     src/theme/Theme.h
     src/Threading.h
     src/Manager.h
+
+	${PROJECT_BINARY_DIR}/gen/QodeEditConfig.h
 )
 
 SET(SOURCES

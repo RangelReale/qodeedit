@@ -16,4 +16,4 @@
 
 // Auto generated file do not edit
 
-#define QICON_THEMES_PATH "$${QICON_THEMES_PATH}"
+#define QICON_THEMES_PATH "${QICON_THEMES_PATH}"
