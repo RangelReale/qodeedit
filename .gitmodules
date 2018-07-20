@@ -1,3 +1,6 @@
 [submodule "mimetypes-qt4"]
 	path = mimetypes-qt4
 	url = git://github.com/pasnox/mimetypes-qt4.git
+[submodule "resources/oxygen-icons-png"]
+	path = resources/oxygen-icons-png
+	url = https://github.com/pasnox/oxygen-icons-png.git

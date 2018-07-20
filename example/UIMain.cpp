@@ -261,6 +261,8 @@ void UIMain::openFilesFinished()
             item->setText( QString( "%1 (%2)" ).arg( QFileInfo( filePath ).fileName() ).arg( highlighter->syntaxDocument().name() ) );
             item->setData( Qt::UserRole, QVariant::fromValue( editor ) );
             ui->swEditors->addWidget( editor );
+
+			editor->setBookmark(5, true);
         }
         // An error occurs
         else {
