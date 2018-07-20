@@ -18,7 +18,7 @@
 
 #include <qglobal.h>
 
-class QMetaObject;
+struct QMetaObject;
 
 #ifndef Q_MOC_RUN
 namespace

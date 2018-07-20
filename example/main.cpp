@@ -15,7 +15,7 @@
 ****************************************************************************/
 #include <QtGui>
 
-#include "QodeEditExampleConfig.h"
+//#include "QodeEditExampleConfig.h"
 #include "UIMain.h"
 
 int main( int argc, char** argv )
@@ -23,6 +23,7 @@ int main( int argc, char** argv )
     QApplication app( argc, argv );
     
 #if defined( Q_OS_MAC ) || defined( Q_OS_WIN )
+	/*
     const QFileInfo themes( QString::fromUtf8( QICON_THEMES_PATH ) );
     
     if ( themes.exists() ) {
@@ -31,6 +32,7 @@ int main( int argc, char** argv )
         QIcon::setThemeSearchPaths( paths );
         QIcon::setThemeName( "oxygen" );
     }
+	*/
 #endif
     
     QRect rect = QRect( QPoint(), QSize( 640, 480 ) );
