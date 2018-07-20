@@ -121,5 +121,13 @@ add_library(QodeEdit STATIC ${SOURCES} ${HEADERS})
 
 target_link_libraries(QodeEdit Qt5::Widgets Qt5::Xml)
 
+FILE(GLOB SG_ROOT src/*.cpp src/*.h)
+source_group(src FILES ${SG_ROOT})
+source_group(src\\editor REGULAR_EXPRESSION editor/.*)
+source_group(src\\margin REGULAR_EXPRESSION margin/.*)
+source_group(src\\syntax REGULAR_EXPRESSION syntax/.*)
+source_group(src\\theme REGULAR_EXPRESSION theme/.*)
+
+
 
 add_subdirectory(example)
